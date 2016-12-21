@@ -1,0 +1,70 @@
+// Font Size
+@each $name, $size in $font-sizes {
+  .fs-#{$name} {
+    font-size: #{$size}px;
+  }
+}
+
+
+// Font Weight
+.bold {
+  font-weight: bold;
+}
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: normal;
+}
+
+
+// Font Style
+.normal {
+  font-style: normal;
+}
+.italic {
+  font-style: italic;
+}
+
+
+// Text Align
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-only($breakpoint) {
+    .text-#{$breakpoint}-left   { text-align: left; }
+    .text-#{$breakpoint}-right  { text-align: right; }
+    .text-#{$breakpoint}-center { text-align: center; }
+  }
+}
+
+
+// Text Break
+.nowrap {
+  white-space: nowrap;
+}
+.break-word {
+  word-wrap: break-word;
+}
+
+
+// Text Transform
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}

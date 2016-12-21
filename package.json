@@ -1,0 +1,8 @@
+{
+  "name": "cloudss",
+  "version": "1.0.0",
+  "description": "CSS Framework",
+  "main": "index.js",
+  "author": "Anton Gunkin",
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+.vgroup {
+
+  &.-border {
+    border-top: 1px solid color(border);
+  }
+
+  @for $i from 1 through 12 {
+    &.-m#{$i} + .vgroup {
+      margin-top: #{$i}px;
+      &.-border {
+        padding-top: #{$i}px;
+      }
+    }
+  }
+}

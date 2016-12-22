@@ -1,0 +1,25 @@
+@each $name, $size in $spacings {
+  .p#{$name} {
+    padding: #{$size};
+  }
+  .px#{$name} {
+    padding-left: #{$size};
+    padding-right: #{$size};
+  }
+  .py#{$name} {
+    padding-top: #{$size};
+    padding-bottom: #{$size};
+  }
+  .pt#{$name} {
+    padding-top: #{$size};
+  }
+  .pr#{$name} {
+    padding-right: #{$size};
+  }
+  .pb#{$name} {
+    padding-bottom: #{$size};
+  }
+  .pl#{$name} {
+    padding-left: #{$size};
+  }
+}

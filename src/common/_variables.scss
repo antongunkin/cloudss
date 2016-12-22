@@ -1,16 +1,17 @@
 $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family: $font-family-sans-serif !default;
 
 $font-size-root: 16 !default;
 $font-sizes: (
   base: 1rem,
-  small: rem-font-size(12),
-  h1: rem-font-size(34),
-  h2: rem-font-size(26),
-  h3: rem-font-size(20)
+  small: px-to-rem(12)+rem,
+  h1: px-to-rem(34)+rem,
+  h2: px-to-rem(26)+rem,
+  h3: px-to-rem(20)+rem
 ) !default;
 
-$line-height: calc-line-height(24) !default;
+$line-height: px-to-rem(24) !default;
 
 $breakpoints: (
   xs: 0,
@@ -31,4 +32,14 @@ $colors: (
   danger: #ff6745,
   info: #4e9cd8,
   disabled: #b0b0b0
+) !default;
+
+$spacings: (
+  0: 0,
+  1: px-to-rem(5)+rem,
+  2: px-to-rem(10)+rem,
+  3: px-to-rem(20)+rem,
+  4: px-to-rem(40)+rem,
+  5: px-to-rem(60)+rem,
+  6: px-to-rem(80)+rem
 ) !default;

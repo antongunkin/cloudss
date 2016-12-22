@@ -7,10 +7,6 @@
   @return null;
 }
 
-@function rem-font-size($pixels) {
-  @return #{$pixels/$font-size-root}rem;
-}
-
-@function calc-line-height($pixels) {
+@function px-to-rem($pixels) {
   @return #{$pixels/$font-size-root};
 }

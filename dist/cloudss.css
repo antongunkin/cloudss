@@ -1,32 +1,32 @@
-.vgroup.-border {
+.vg.-vgb {
   border-top: 1px solid #d9dce1; }
-.vgroup.-m0 + .vgroup {
+.vg + .vg.-vg0 {
   margin-top: 0; }
-  .vgroup.-m0 + .vgroup.-border {
+  .vg + .vg.-vg0.-vgb {
     padding-top: 0; }
-.vgroup.-m1 + .vgroup {
+.vg + .vg.-vg1 {
   margin-top: 0.3125rem; }
-  .vgroup.-m1 + .vgroup.-border {
+  .vg + .vg.-vg1.-vgb {
     padding-top: 0.3125rem; }
-.vgroup.-m2 + .vgroup {
+.vg + .vg.-vg2 {
   margin-top: 0.625rem; }
-  .vgroup.-m2 + .vgroup.-border {
+  .vg + .vg.-vg2.-vgb {
     padding-top: 0.625rem; }
-.vgroup.-m3 + .vgroup {
+.vg + .vg.-vg3 {
   margin-top: 1.25rem; }
-  .vgroup.-m3 + .vgroup.-border {
+  .vg + .vg.-vg3.-vgb {
     padding-top: 1.25rem; }
-.vgroup.-m4 + .vgroup {
+.vg + .vg.-vg4 {
   margin-top: 2.5rem; }
-  .vgroup.-m4 + .vgroup.-border {
+  .vg + .vg.-vg4.-vgb {
     padding-top: 2.5rem; }
-.vgroup.-m5 + .vgroup {
+.vg + .vg.-vg5 {
   margin-top: 3.75rem; }
-  .vgroup.-m5 + .vgroup.-border {
+  .vg + .vg.-vg5.-vgb {
     padding-top: 3.75rem; }
-.vgroup.-m6 + .vgroup {
+.vg + .vg.-vg6 {
   margin-top: 5rem; }
-  .vgroup.-m6 + .vgroup.-border {
+  .vg + .vg.-vg6.-vgb {
     padding-top: 5rem; }
 
 .color-body {
@@ -571,5 +571,26 @@
 
 .mr-auto {
   margin-right: auto; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.top0 {
+  top: 0; }
+
+.right0 {
+  right: 0; }
+
+.bottom0 {
+  bottom: 0; }
+
+.left0 {
+  left: 0; }
 
 /*# sourceMappingURL=cloudss.css.map */
